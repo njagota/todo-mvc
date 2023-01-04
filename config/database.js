@@ -5,7 +5,7 @@ const connectDB = async () => {
     const conn = await mongoose.connect(process.env.DB_STRING, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
-      useFindAndModify: false,
+      //useFindAndModify: false,
     })
 
     console.log(`MongoDB Connected: ${conn.connection.host}`)
@@ -16,3 +16,4 @@ const connectDB = async () => {
 }
 
 module.exports = connectDB
+ 
